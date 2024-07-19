@@ -7,28 +7,78 @@
         <link rel="stylesheet" href="stylesheet/tailwind/output.css">
     </head>
     <body>
-        <h1 class="text-green-600 text-4xl">Pudding</h1>
+        <!-- bg start -->
+        <img src="img/bgBody.jpg" alt="bgBody"
+            class="absolute
+            w-fit -z-50 pointer-events-none">
 
-        <div class="drawer lg:drawer-open">
-            <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-            <div
-                class="drawer-content flex flex-col items-center justify-center">
-                <!-- Page content here -->
-                <label for="my-drawer-2"
-                    class="btn btn-primary drawer-button lg:hidden">
-                    Open drawer
-                </label>
-            </div>
-            <div class="drawer-side">
-                <label for="my-drawer-2" aria-label="close sidebar"
-                    class="drawer-overlay"></label>
-                <ul
-                    class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-                    <!-- Sidebar content here -->
-                    <li><a>Sidebar Item 1</a></li>
-                    <li><a>Sidebar Item 2</a></li>
-                </ul>
+        <!-- bg end -->
+
+        <!-- container start -->
+        <div
+            class="h-full w-full backdrop-blur-md z-10 px-[2.5rem]  py-[2.5rem]">
+
+            <div class="h-full w-full rounded-lg bg-zinc-200 opacity-70">
+
+                <!-- navbar start -->
+                <div class="navbar rounded-lg">
+                    <div class="flex-1">
+                        <a
+                            class="btn btn-ghost text-xl text-textBrown font-bold">Anthas
+                            Pudding
+                        </a>
+                    </div>
+
+                    <!-- navbar-end menu start -->
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button"
+                            class="btn bg-textBrown
+                            hover:bg-orange-950 lg:hidden">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                            </svg>
+                        </div>
+                        <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content bg-zinc-200 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a
+                                    class="text-textBrown font-bold">Home</a></li>
+                            <li><a
+                                    class="text-textBrown font-bold">Menu</a></li>
+                            <li><a class="text-textBrown font-bold">About
+                                    us</a></li>
+                            <li><a class="text-textBrown font-bold">Contact
+                                    us</a></li>
+                            <li><a
+                                    class="text-textBrown font-bold">Location</a></li>
+                        </ul>
+                    </div>
+                    <!-- navbar-end menu end -->
+
+                    <!-- navbar-end menu lg start -->
+                    <div class="hidden lg:flex lg:flex-none navbar-end">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a
+                                    class="text-textBrown font-bold">Home</a></li>
+                            <li><a
+                                    class="text-textBrown font-bold">Menu</a></li>
+                            <li><a class="text-textBrown font-bold">About
+                                    us</a></li>
+                            <li><a class="text-textBrown font-bold">Contact
+                                    us</a></li>
+                            <li><a
+                                    class="text-textBrown font-bold">Location</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- navbar-end menu lg end -->
+                <!-- navbar end -->
             </div>
         </div>
+        <!-- container end -->
     </body>
 </html>
